@@ -2,7 +2,6 @@ package org.example.View;
 
 import java.util.Scanner;
 
-
 public class Menu {
     private final Scanner scanner;
 
@@ -24,5 +23,4 @@ public class Menu {
                 """);
         return scanner.nextLine();
     }
-
 }

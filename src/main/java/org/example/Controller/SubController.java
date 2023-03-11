@@ -3,11 +3,8 @@ package org.example.Controller;
 import org.example.Model.Sub;
 import org.example.View.View;
 
-
-public class SubController implements I_Controller {
-
+public class SubController implements Controller {
     View view;
-
     Sub subModel;
 
     public SubController(View view, Sub subModel) {

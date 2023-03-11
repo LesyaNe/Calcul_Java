@@ -3,17 +3,14 @@ package org.example.Controller;
 import org.example.Model.Multi;
 import org.example.View.View;
 
-public class MultiController implements I_Controller {
-
+public class MultiController implements Controller {
     View view;
-
     Multi multiModel;
 
     public MultiController(View view, Multi multModel) {
         this.view = view;
         this.multiModel = multModel;
     }
-
 
     @Override
     public void doIt() {

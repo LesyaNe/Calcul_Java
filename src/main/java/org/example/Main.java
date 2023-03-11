@@ -1,6 +1,5 @@
 package org.example;
 
-
 import Controller.DivController;
 import Controller.MultiController;
 import Controller.SubController;
@@ -17,8 +16,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        View v = new View();
-        Presenter p = new Presenter(new SumController(v, new Sum()), new SubController(v, new Sub()), new DivController(v, new Div()), new MultiController(v, new Multi()), scanner, new Menu(scanner));
-        p.start();
+        View view = new View();
+        Presenter presenter = new Presenter(new SumController(view, new Sum()), new SubController(view, new Sub()), new DivController(view, new Div()), new MultiController(view, new Multi()), scanner, new Menu(scanner));
+        presenter.start();
     }
 }

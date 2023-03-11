@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class View {
     Scanner in = new Scanner(System.in);
-
     /**
      * Метод возвращает число, введенное пользователем
      */
@@ -20,7 +19,6 @@ public class View {
         }
         return num;
     }
-
     /**
      * Метод возвращает делитель, не дает ввести 0
      */
@@ -40,7 +38,6 @@ public class View {
         }
         return num;
     }
-
     /**
      * Метод выводит результат на экран
      */

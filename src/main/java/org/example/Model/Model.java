@@ -1,12 +1,10 @@
 package org.example.Model;
 
-public interface I_Model {
+public interface Model {
 
     int result();
 
-
     void setX(int value);
-
 
     void setY(int value);
 }

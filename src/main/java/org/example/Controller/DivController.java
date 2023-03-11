@@ -3,10 +3,8 @@ package org.example.Controller;
 import org.example.Model.Div;
 import org.example.View.View;
 
-public class DivController implements I_Controller {
-
+public class DivController implements Controller {
     View view;
-
     Div divModel;
 
     public DivController(View view, Div divModel) {

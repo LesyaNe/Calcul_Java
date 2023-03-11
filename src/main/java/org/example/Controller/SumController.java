@@ -3,17 +3,14 @@ package org.example.Controller;
 import org.example.Model.Sum;
 import org.example.View.View;
 
-public class SumController implements I_Controller{
-
+public class SumController implements Controller {
     View view;
-
     Sum model;
 
     public SumController(View view, Sum model) {
         this.view = view;
         this.model = model;
     }
-
 
     @Override
     public void doIt() {

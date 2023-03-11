@@ -1,11 +1,12 @@
 package org.example;
+
 import Controller.DivController;
 import Controller.MultController;
 import Controller.SubController;
 import Controller.SumController;
 import View.Menu;
-
 import java.util.Scanner;
+
 public class Presenter {
     SumController sumController;
     SubController subController;
@@ -22,9 +23,10 @@ public class Presenter {
         this.scanner = scanner;
         this.menu = menu;
     }
-    /**Метод запускает работу с калькулятором*/
+    /**
+     * Метод запускает работу с калькулятором
+     */
     public void start() {
-
         while (true) {
             switch (menu.selectFunction()) {
                 case "1" -> // сложение
@@ -41,6 +43,4 @@ public class Presenter {
             }
         }
     }
-
-
 }
