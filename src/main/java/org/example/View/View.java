@@ -4,9 +4,7 @@ import java.util.Scanner;
 
 public class View {
     Scanner in = new Scanner(System.in);
-    /**
-     * Метод возвращает число, введенное пользователем
-     */
+
     public int getValue() {
         System.out.println("Введите целое число: ");
         int num;
@@ -19,9 +17,7 @@ public class View {
         }
         return num;
     }
-    /**
-     * Метод возвращает делитель, не дает ввести 0
-     */
+
     public int getValueDiv() {
         System.out.println("Введите целое число, не равное нулю: ");
         int num;
@@ -38,9 +34,7 @@ public class View {
         }
         return num;
     }
-    /**
-     * Метод выводит результат на экран
-     */
+
     public void print(int data, String title) {
         System.out.printf("%s %d\n", title, data);
     }
